@@ -1,0 +1,39 @@
+{
+    "name": "Telegraph Bot",
+    "description": "A bot that can upload photos and video to telegraph.",
+    "logo": "https://telegra.ph/file/28fecf3ac49b8c6ac77f8.jpg",
+    "keywords": [
+        "Telegraph",
+        "Uploader",
+        "Telegram Bot",
+        "Tg x Bots"
+    ],
+    "repository": "https://github.com/Teamkiku/Telegraph",
+    "success_url": "https://t.me/Tgxbots",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "Your Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
